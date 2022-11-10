@@ -1,22 +1,14 @@
-<script ref="component">
-import { ref } from "vue";
+<script ref="component">// @ts-nocheck
 
-let storage = async (resolve, reject) => {
-  return {
-    resolve: resolve,
-    reject: reject,
-    data: {
-      name: "RadhaR",
-      dob: 1992
-    },
-  };
-};
+import { ref } from "vue";
+import store from './cloud/storage'
+
 export default {
   el: "#App",
   methods: {
     addOne: async (clickEvent) => {
-      await storage()
-        .then((response) => {
+      
+      await store.air().then((response) => {
           console.log("then " + response.data.dob);
         })
         .catch((error) => {

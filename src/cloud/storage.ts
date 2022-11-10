@@ -1,6 +1,4 @@
 class Storage {
-    
-
     AIR = async (resolve, reject) => {
         return {
             resolve: resolve,
@@ -15,5 +13,7 @@ class Storage {
 
 let storage = new Storage()
 
-export default storage;
+export default {
+    air : await storage.AIR
+};
 
