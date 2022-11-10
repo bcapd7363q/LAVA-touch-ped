@@ -1,31 +1,37 @@
 <script setup>
-import {ref,} from 'vue'
+import {ref} from 'vue'
 let toDay = ref(new Date().getDate());
 
 let positive = (event, toDay) => {
-  const months = (toDay >= 30) ? "Regular" : "Leap";
-  console.log(event, months);
+
+  const financialStatus = (toDay >= 30) ? "Regular" : "Leap";
+  return financialStatus ;
 }
 
-let negative = () => {}
+let negative = () => {
+  return 100;
+}
 
-methods: (event, response)=> {
-  console.log(event, response ='methods');
-  expose  : defineExpose;
-  toDay: toDay;
-  positive: positive;
-  let mounted = (event, response)=> {
-    // ...
-    return response
-  }
-  let publicMethod = (event, response)=> {
-    // ...
-    return response
-  }
-  let privateMethod = (event, response) => {
-    // ...
-    return response
-  }
+data:() => {
+  return {
+    positive : "positive",
+    navigator: "navigator"
+  };
+}
+serverPrefetch: async () =>{
+
+}
+mounted: async (data)=>{
+  await console.log("console log:mounted");
+  return "mounted"
+}
+created:async()=>{
+  await console.log("console log:created");
+  return "created"
+}
+methods:async()=>{
+  await console.log("console log:methods");
+  return "methods"
 }
 
 </script>
