@@ -1,11 +1,19 @@
 class Storage {
     AIR = async (resolve, reject) => {
+        let date = new Date();
         return {
             resolve: resolve,
             reject: reject,
             data: {
                 name: "RadhaR",
-                dob: 1992
+                date: date.getDate() ,
+                month: date.getMonth(),
+                year: date.getFullYear(),
+                hour: date.getHours(),
+                minutes: date.getMinutes(),
+                second: date.getSeconds(),
+                millSecond:date.getMilliseconds(),
+                timeZone:date.getTimezoneOffset()
             },
         };
     };
@@ -14,6 +22,6 @@ class Storage {
 let storage = new Storage()
 
 export default {
-    air : await storage.AIR
+    air: await storage.AIR
 };
 

@@ -1,4 +1,4 @@
-<script ref="component">// @ts-nocheck
+<script lang="ts" ref="component">
 
 import { ref } from "vue";
 import store from './cloud/storage'
@@ -9,7 +9,7 @@ export default {
     addOne: async (clickEvent) => {
       
       await store.air().then((response) => {
-          console.log("then " + response.data.dob);
+          console.log("then " + response.data.date);
         })
         .catch((error) => {
           console.log("catch error! :" + error);
