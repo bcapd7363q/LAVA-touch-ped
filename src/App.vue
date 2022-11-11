@@ -1,21 +1,20 @@
 <script lang="ts" ref="component">
-
 import { ref } from "vue";
-import store from './cloud/storage'
-
+import STORE from "./cloud/storage";
+import MONTH from './components/months.vue'
 export default {
   el: "#App",
   methods: {
-    addOne: async (clickEvent) => {
-      
-      await store.air().then((response) => {
+    addOne: async () => {
+      await STORE.air()
+        .then((response) => {
           console.log("then " + response.data.date);
         })
         .catch((error) => {
           console.log("catch error! :" + error);
         })
         .finally(() => {
-          console.log("finally async completed " );
+          console.log("finally async completed ");
         });
     },
   },
@@ -30,5 +29,6 @@ export default {
     >
       Button
     </button>
+    <MONTH/>
   </div>
 </template>

@@ -14,7 +14,7 @@ npm create vite@latest
 
 ## predator
 
-oxLite | DataBase | PIP
+oxLite | DataBase | PHP
 --- | --- | ---
 ``JSON`` | **ORM** | **PYTHON**
 🧑‍🦯 | 🎭 | 🎭
