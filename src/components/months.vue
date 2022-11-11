@@ -1,6 +1,6 @@
 <script lang="ts">
-import { ref } from 'vue'
 import STORE from "../cloud/storage";
+import Popover from 'vue-js-popover'
 
 let response =  await STORE.air().then(res=>res.data).catch(error=>{console.log(error);
 });
@@ -9,6 +9,7 @@ export default {
   name: "Calendar",
   date: response,
   components: {
+    Popover
   },
   data() {
     return {
@@ -155,6 +156,9 @@ export default {
         <div class="flex flex-wrap border-t border-l">
           <div class="flex justify-center">
             <div class="bg-white">
+                <div class="border-b bg-gray-900 border-gray-500 font-medium px-4 py-[21.8%] whitespace-nowrap">
+                  <div class="text-white font-small text-sm uppercase tracking-wide font-bold text-left mb-1">NTR</div>
+                </div>
                 <div class="border-b bg-red-300 border-red-500 font-medium px-4 py-[20.8%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Sun</div>
                 </div>
@@ -192,6 +196,36 @@ export default {
                 <div class=" inline-block min-w-full sm:px-7 lg:px-8">
                   <div class="overflow-hidden">
                     <table class="min-w-full text-center">
+                      <thead>
+                        <tr>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            IND
+                          </td></th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            CAP
+                          </td></th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            HYD
+                          </td></th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                              STR
+                          </td>
+                          </th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            PIN
+                          </td>
+                          </th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            BLD
+                          </td>
+                          </th>
+                          <th class="border-b bg-gray-900 border-gray-500"><td class="text-sm text-white font-small px-6 py-4 whitespace-nowrap">
+                            ROM
+                          </td>
+                          </th>
+                          
+                        </tr>
+                      </thead>
                       <tbody>
                         <tr class="border-b bg-red-300 border-red-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
