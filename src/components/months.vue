@@ -155,25 +155,25 @@ export default {
         <div class="flex flex-wrap border-t border-l">
           <div class="flex justify-center">
             <div class="bg-white">
-                <div class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                <div class="border-b bg-red-300 border-red-500 font-medium px-4 py-[20.8%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Sun</div>
                 </div>
-                <div class="font-medium px-6 py-4">
-                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Mon</div>
+                <div class="border-b bg-orange-300 border-orange-500 font-medium px-4 py-[20.4%] whitespace-nowrap">
+                  <div class="text-gray-600  text-sm uppercase tracking-wide font-bold text-left mb-1">Mon</div>
                 </div>
-                <div class="font-medium px-6 py-4">
+                <div class="border-b bg-amber-gray-300 border-amber-gray-500 font-medium px-4 py-[20.8%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Tue</div>
                 </div>
-                <div class="font-medium px-6 py-4">
+                <div class="border-b bg-yellow-300 border-yellow-500 font-medium px-4 py-[20.8%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Wed</div>
                 </div>
-                <div class="font-medium px-6 py-4">
+                <div class="border-b bg-lime-300 border-lime-500 font-medium px-4 py-[20.8%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Thu</div>
                 </div>
-                <div class="font-medium px-6 py-4">
+                <div class="border-b bg-purple-300 border-purple-500 font-medium px-4 py-[20.1%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Fri</div>
                 </div>
-                <div class="font-medium px-6 py-4">
+                <div class="border-b bg-gray-300 boder-gray-500 font-medium px-5 py-[20.7%] whitespace-nowrap">
                   <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Sat</div>
                 </div>
               <!-- <p class="text-gray-700 text-base mb-4">
@@ -189,15 +189,15 @@ export default {
           <div>
             <div class="flex flex-col">
               <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                <div class=" inline-block min-w-full sm:px-7 lg:px-8">
                   <div class="overflow-hidden">
                     <table class="min-w-full text-center">
                       <tbody>
-                        <tr class="border-b bg-blue-100 border-blue-200">
+                        <tr class="border-b bg-red-300 border-red-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Primary
                           </td>
-                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-orange-900 font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
                           <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
@@ -216,7 +216,7 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-purple-100 border-purple-200">
+                        <tr class="border-b bg-orange-300 border-orange-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Secondary
                           </td>
@@ -239,7 +239,7 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-green-100 border-green-200">
+                        <tr class="border-b bg-amber-gray-300 border-amber-gray-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Success
                           </td>
@@ -262,7 +262,7 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-red-100 border-red-200">
+                        <tr class="border-b bg-yellow-300 border-yellow-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Danger
                           </td>
@@ -285,7 +285,7 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-yellow-100 border-yellow-200">
+                        <tr class="border-b bg-lime-300 border-lime-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Warning
                           </td>
@@ -308,7 +308,7 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-indigo-100 border-indigo-200">
+                        <tr class="border-b bg-purple-300 border-purple-500">
                           <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
                             Info
                           </td>
@@ -331,26 +331,26 @@ export default {
                             Cell
                           </td>
                         </tr>
-                        <tr class="border-b bg-gray-800 boder-gray-900">
-                          <td class="text-sm text-white font-medium px-6 py-4 whitespace-nowrap">
+                        <tr class="border-b bg-gray-300 boder-gray-500">
+                          <td class="text-sm text-dark font-medium px-6 py-4 whitespace-nowrap">
                             Dark
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
-                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                          <td class="text-sm text-dark font-light px-6 py-4 whitespace-nowrap">
                             Cell
                           </td>
                         </tr>
