@@ -142,32 +142,225 @@ export default {
 
           </div>
         </div>
+        
         <div>
         </div>
       </div>
-      <div class="-mx-1 -mb-1">
-        <div class="flex flex-wrap -mb-8" style="margin-bottom: -30px;">
-          <template v-for="day in days">
-            <div class="px-2 py-2 w-[14.28%]">
-              <div v-text="day" class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1"></div>
-            </div>
-          </template>
+      
+      <div class="mx-1 mb-1">
+        <div class="flex flex-wrap mb-8" style="margin-bottom: 30px;">
+          
         </div>
 
         <div class="flex flex-wrap border-t border-l">
-          <template v-for="emptyDay in emptyDays">
-            <div class="text-left border-r border-b px-4 pt-2 h-32 w-[14.28%]"></div>
-          </template>
-          <template v-for="(date, dateIndex) in no_of_days">
-            <div class="px-4 pt-2 border-r border-b relative h-32 w-[14.28%]">
-              <div @click="showDayModal(date)" v-text="date"
-                class="inline-flex w-6 h-6 items-center justify-center cursor-pointer text-center leading-none rounded-full transition ease-in-out duration-100"
-                :class="{ 'bg-blue-500 text-white': isToday(date) === true, 'text-gray-700 hover:bg-blue-200': isToday(date) === false }">
-              </div>
-              <div class="overflow-y-auto mt-1 h-20">
+          <div class="flex justify-center">
+            <div class="bg-white">
+                <div class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Sun</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Mon</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Tue</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Wed</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Thu</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Fri</div>
+                </div>
+                <div class="font-medium px-6 py-4">
+                  <div class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1">Sat</div>
+                </div>
+              <!-- <p class="text-gray-700 text-base mb-4">
+              <template v-for="day in days">
+                <div class="font-medium px-6 py-4 ">
+                  <div v-text="day" class="text-gray-600 text-sm uppercase tracking-wide font-bold text-left mb-1"></div>
+                </div>
+              </template>
+              </p>
+               -->
+            </div>
+          </div>
+          <div>
+            <div class="flex flex-col">
+              <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                  <div class="overflow-hidden">
+                    <table class="min-w-full text-center">
+                      <tbody>
+                        <tr class="border-b bg-blue-100 border-blue-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Primary
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-purple-100 border-purple-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Secondary
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-green-100 border-green-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Success
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-red-100 border-red-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Danger
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-yellow-100 border-yellow-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Warning
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-indigo-100 border-indigo-200">
+                          <td class="text-sm text-gray-900 font-medium px-6 py-4 whitespace-nowrap">
+                            Info
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                        <tr class="border-b bg-gray-800 boder-gray-900">
+                          <td class="text-sm text-white font-medium px-6 py-4 whitespace-nowrap">
+                            Dark
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                          <td class="text-sm text-white font-light px-6 py-4 whitespace-nowrap">
+                            Cell
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
-          </template>
+          </div>
         </div>
       </div>
     </div>
