@@ -23,8 +23,6 @@ oxLite | DataBase | PHP
 
 
 ####  (centroid && redoes) / orbit  = JupiterAxis
-
-
   
 ```    
 Earth 
