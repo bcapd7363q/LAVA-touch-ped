@@ -19,3 +19,34 @@ oxLite | DataBase | PHP
 ``JSON`` | **ORM** | **PYTHON**
 🧑‍🦯 | 🎭 | 🎭
 
+## FUse
+
+
+centroid   and regions
+
+export default FUse{
+    super()
+    let date    = new Date();
+    let gravity = ? ;
+    let energy  = m(c*c) ## mc" ;
+    electron: (date.getDay/31)=>{
+
+    }
+    proton: (date.getMinute/60)=>{
+
+    }
+    newTon:(80/100)[]=>{
+        
+    }
+    metrics:()=>{}
+    limit(20A){
+            ##..    5v === 3A
+            ##*6   30V === 18A  
+            ##-10  20V === 8A
+            ##><   8A  === 20V
+            ##+12  20A === 32V    
+
+    }
+    
+}
+
