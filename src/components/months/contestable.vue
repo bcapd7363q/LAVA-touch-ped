@@ -3,7 +3,6 @@ import { def } from '@vue/shared';
 
 export default {
     mounted() {
-        console.log('monthContestable')
     },
     name: 'monthContestable',
     data() {
