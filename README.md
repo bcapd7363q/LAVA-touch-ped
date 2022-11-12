@@ -22,13 +22,18 @@ oxLite | DataBase | PHP
 ## FUse
 
 
-centroid   and regions
+####  (centroid && redoes) / orbit  = JupiterAxis
 
-export default FUse{
+
+    export default {
     super()
+
     let date    = new Date();
+
     let gravity = ? ;
-    let energy  = m(c*c) ## mc" ;
+
+    let energy : m(c*c)  ;
+
     electron: (date.getDay/31)=>{
 
     }
@@ -47,6 +52,7 @@ export default FUse{
             ##+12  20A === 32V    
 
     }
+    }
     
-}
+
 
