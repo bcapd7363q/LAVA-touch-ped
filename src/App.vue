@@ -1,7 +1,6 @@
 <script lang="ts" ref="component">
 import STORE from "./cloud/storage";
 import MONTH from './components/months.vue'
-import CONTESTABLE from './components/months/contestable.vue'
 export default {
   el: "#App",
   components:{

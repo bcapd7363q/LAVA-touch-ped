@@ -2,8 +2,7 @@
 import STORE from "../cloud/storage";
 import HEADER from "../components/months/header.vue"
 import TOOLS from "../components/months/tools.vue"
-import NTR from "../components/months/ntr.vue"
-import CONTESTABLE from '../components/months/contestable.vue'
+
 let response = await STORE.air().then(res => res.data).catch(error => {
   console.log(error);
 });
@@ -14,8 +13,6 @@ export default {
   components: {
     HEADER,
     TOOLS,
-    NTR,
-    CONTESTABLE 
   },
   data() {
     return {
@@ -133,23 +130,6 @@ export default {
 </script>
 
 <template>
-  <div class="container mx-auto py-2 px-3">
-    <div class="bg-white rounded-lg shadow overflow-hidden">
-      <div class="flex-col items-center justify-between py-1 px-5">
-        <HEADER />
-        <div>
-        </div>
-      </div>
-
-      <div class="mx-1 mb-1">
-          <TOOLS />
-        
-
-        <div class="flex flex-wrap border-t border-l">
-          <NTR/>
-          <CONTESTABLE ref="component" />
-        </div>
-      </div>
-    </div>
-  </div>
+  <HEADER />
+  <TOOLS /> 
 </template>
