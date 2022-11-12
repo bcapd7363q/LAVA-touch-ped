@@ -25,34 +25,45 @@ oxLite | DataBase | PHP
 ####  (centroid && redoes) / orbit  = JupiterAxis
 
 
-    export default {
+  
+```    
+Earth 
+{
     super()
 
-    let date    = new Date();
+    let date = new Date();
 
-    let gravity = ? ;
+    gravity = {
+        m1 = 2 Kg,                ## Mass
+        m2 = 5 Kg,                ## Mass
+        r = 5 cm.                 ##Radius
+        G = 6.67 * 10 - 11 Nm2/ Kg2  ##Gravitational Constant
+}
 
-    let energy : m(c*c)  ;
+energy = (e = mc²){
 
-    electron: (date.getDay/31)=>{
+}
 
-    }
-    proton: (date.getMinute/60)=>{
+electron: (date.getDay / 31)=> {
 
-    }
-    newTon:(80/100)[]=>{
-        
-    }
-    metrics:()=>{}
-    limit(20A){
+}
+proton: (date.getMinute / 60)=> {
+
+}
+newTon: (80 / 100)[]=> {
+
+}
+metrics: () => { }
+limit(20A){
             ##..    5v === 3A
-            ##*6   30V === 18A  
-            ##-10  20V === 8A
-            ##><   8A  === 20V
-            ##+12  20A === 32V    
+            ## * 6   30V === 18A
+            ## - 10  20V === 8A
+            ## > <8A === 20V
+            ## + 12  20A === 32V
 
-    }
-    }
+}
+}
+```
     
 
 
