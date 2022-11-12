@@ -32,6 +32,7 @@ Earth
     super()
 
     let date = new Date();
+    
 
     gravity = {
         m1 = 2 Kg,                ## Mass
@@ -44,14 +45,19 @@ energy = (e = mc²){
 
 }
 
-electron: (date.getDay / 31)=> {
+force: (G)=>{
+         return m1 * m2 / r²
+         }
+elecTron: (date.getDay / 31)=> {
 
 }
-proton: (date.getMinute / 60)=> {
+proTron: (date.getMinute / 60)=> {
 
 }
-newTon: (80 / 100)[]=> {
-
+newTron: (80 / 100)[]=> {
+       let  W=Fd=21​mv2;  ##  W=2(5)=21​0.7v2
+       let  v2=10/0.35=28.6;
+       
 }
 metrics: () => { }
 limit(20A){
