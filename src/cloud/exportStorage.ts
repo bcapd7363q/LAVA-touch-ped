@@ -11,7 +11,6 @@ function ram() {
  async function processor() {
     return {
         data: storage.PROCESSOR,
-
         system: await storage.SYSTEM('all', 'try')
             .then(res => { return res })
             .catch(error => { return error })
@@ -25,8 +24,6 @@ function data() {
         data: storage.DATA
     }
 }
-
-
 
 export {
     ram,
