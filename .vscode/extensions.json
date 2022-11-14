@@ -1,3 +1,6 @@
 {
-  "recommendations": ["Vue.volar"]
+    "recommendations": [
+        "ms-vscode.vs-keybindings",
+        "Vue.volar"
+    ]
 }
